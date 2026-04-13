@@ -72,7 +72,7 @@ The system consists of the following layers:
 
 ```bash
 # Clone repository
-git clone <your-repo-url>
+git clone https://github.com/Sanya327/ClassicalDance_Posture_Correction.git
 cd project-folder
 
 # Create virtual environment
