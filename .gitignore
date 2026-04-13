@@ -1,0 +1,15 @@
+configs/
+venv/
+# Ignore specific folders
+keypoint-extractor/output/
+keypoint-extractor/temp/
+keypoint-extractor/videos/
+
+# Ignore virtual environment
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
