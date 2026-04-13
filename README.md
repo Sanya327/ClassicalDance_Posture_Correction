@@ -109,6 +109,29 @@ pip install -r requirements.txt
 
 ---
 
+## 📸 Project Review (Screenshots)
+
+### 🏠 Landing Page
+![Landing Page](mainframe_ss/1_Landing_page.png)
+
+---
+
+### 🎥 Video Processing
+![Processing Video](mainframe_ss/2_Processing_Video.png)
+
+---
+
+### 📊 Feedback Output
+![Feedback](mainframe_ss/3_Feedback.png)
+
+---
+
+### 📈 Detailed Feedback
+![Feedback Continued](mainframe_ss/4_Feedback_continued.png)
+
+
+---
+
 ## 🧩 Challenges Solved
 
 - Lack of personalized feedback in dance learning
@@ -128,23 +151,4 @@ pip install -r requirements.txt
 
 ---
 
-## 📚 References
 
-This project is based on concepts and research from:
-- OpenPose
-- MediaPipe
-- LSTM Networks
-- Bharatanatyam Adavus Dataset
-
----
-
-## 👨‍💻 Authors
-
-Developed as part of a final year project.
-
----
-
-## 📄 Source
-
-This README is generated based on the project documentation provided in:
-Content page_final.pdf
