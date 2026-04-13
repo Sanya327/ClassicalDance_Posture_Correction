@@ -1,14 +1,150 @@
-# Smart-Dance (HTN 2021 Finalists)
+# AI-Powered Posture Correction for Classical Dance (Natta Adavu)
 
-### Link: 
-https://devpost.com/software/smart-dance?ref_content=user-portfolio&ref_feature=in_progress
+## 📌 Overview
+This project presents an AI-powered system designed to analyze and correct posture in **classical Indian dance**, specifically *Natta Adavu* (Bharatanatyam). It combines **computer vision, deep learning, and audio analysis** to provide real-time feedback on dance performance.
 
-## Inspiration
+The system acts as a bridge between **traditional dance teaching methods** and **modern AI technology**, enabling learners to practice effectively even without constant instructor supervision.
 
-With the rise of Tiktok and other social media platforms, pop dance culture has grown tremendously. As programmers, we wanted to find a way to give people a method of engaging with this new culture in a new and fun way.
+---
 
-## What it does 👀
-Smart Dance uses pose estimation to store the key points of dances from popular dance videos and use those poses to guide the user on how to move their body to do the dance. Through our intuitive UI, users can find trending dances and learn or assess how well they're dancing when compared to their friends or internet stars that also do these dances. The score function we've made allows users to determine whether their pose is similar or different to the videos they are dancing along with. This makes dancing (and learning to dance) much more engaging as well as opens the door to the gamification of dancing with real-time feedback and encouragement (much like how the classic dance arcade games used to work). The only difference is not just enjoyable but is portable, easy to play and can be integrated with a lot more going forward!
+## 🚀 Features
 
-## How we built it 💡
-Smart-Dance uses Python on the backend, Mediapipe for real time pose estimation on CPUs and GPUs paired with OpenCV, as well as Flask, HTML / CSS, and MongoDB for the frontend-backend-integration.
+- 🎯 **Pose Detection** using MediaPipe (33 keypoints)
+- 🧠 **LSTM-based Deep Learning Model** for temporal movement analysis
+- 🎵 **Audio Beat Synchronization** using Librosa
+- 📊 **Movement Quality Scoring**
+- ⏱ **Timestamped Feedback**
+- 📈 **Performance Analysis & Progress Tracking**
+- 🎥 Supports **reference vs student video comparison**
+
+---
+
+## 🧠 System Architecture
+
+The system consists of the following layers:
+
+1. **Input Layer**
+   - Accepts student and reference videos
+   - Performs preprocessing and validation
+
+2. **Preprocessing Layer**
+   - Extracts pose landmarks using MediaPipe
+   - Performs audio beat detection
+
+3. **LSTM Analysis Layer**
+   - Analyzes temporal sequences of movements
+   - Evaluates spatial + temporal accuracy
+
+4. **Feedback Generation Layer**
+   - Generates actionable insights
+   - Evaluates posture, rhythm, and movement
+
+5. **Output Layer**
+   - Displays scores, errors, and timestamped feedback
+
+---
+
+## 🛠️ Tech Stack
+
+### Core Technologies
+- Python 3.11+
+- OpenCV
+- MediaPipe
+- PyTorch
+- Librosa
+
+### Supporting Libraries
+- NumPy, Pandas, SciPy
+- Matplotlib
+- Scikit-learn
+- FFmpeg
+
+### Backend
+- Flask / FastAPI
+- Uvicorn
+
+### Frontend
+- React (UI for feedback visualization)
+
+---
+
+## ⚙️ Installation
+
+```bash
+# Clone repository
+git clone <your-repo-url>
+cd project-folder
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate   # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Usage
+
+1. Upload a **dance video**
+2. System extracts:
+   - Pose landmarks
+   - Audio rhythm
+3. Model compares with reference data
+4. Get:
+   - Accuracy score
+   - Mistake highlights
+   - Timestamped corrections
+
+---
+
+## 📊 Results
+
+- Real-time posture correction feedback
+- Movement accuracy scoring
+- Rhythm synchronization analysis
+- Visual UI showing errors and suggestions
+
+---
+
+## 🧩 Challenges Solved
+
+- Lack of personalized feedback in dance learning
+- Difficulty in maintaining posture accuracy
+- Absence of temporal (sequence-based) evaluation in existing systems
+
+---
+
+## 🔮 Future Improvements
+
+- 3D pose estimation
+- Multi-camera support
+- Mobile app integration
+- Voice-guided corrections
+- Gamification features
+- Support for other dance forms
+
+---
+
+## 📚 References
+
+This project is based on concepts and research from:
+- OpenPose
+- MediaPipe
+- LSTM Networks
+- Bharatanatyam Adavus Dataset
+
+---
+
+## 👨‍💻 Authors
+
+Developed as part of a final year project.
+
+---
+
+## 📄 Source
+
+This README is generated based on the project documentation provided in:
+Content page_final.pdf
