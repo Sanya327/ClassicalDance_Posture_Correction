@@ -112,7 +112,7 @@ pip install -r requirements.txt
 ## 📸 Project Review (Screenshots)
 
 ### 🏠 Landing Page
-![Landing Page](mainframe_ss/1_Landing_page.png)
+![Landing Page](mainframe_ss/1_Landing_page.jpg)
 
 ---
 
